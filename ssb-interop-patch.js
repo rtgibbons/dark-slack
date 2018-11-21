@@ -1,3 +1,4 @@
+
 // Dark Slack theme
 document.addEventListener("DOMContentLoaded", function() {
     // Then get its webviews
