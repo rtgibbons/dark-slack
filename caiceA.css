@@ -786,3 +786,5 @@ input[type=text]:focus, input[type=password]:focus, input[type=datetime]:focus, 
 }
 
 .c-message--adjacent.c-message--focus .c-message__gutter, .c-message--adjacent.c-message--hover .c-message__gutter, .c-message--adjacent:hover .c-message__gutter { margin-top: 6px; }
+
+.p-archives_banner { background-color: #005e99 !important; color: #e6e6e6; }
