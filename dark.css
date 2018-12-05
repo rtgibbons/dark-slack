@@ -44,7 +44,8 @@ h1 a:active, h1 a:hover, h1 a:link, h1 a:visited { color: #e6e6e6; }
 
 .supports_custom_scrollbar #messages_container::after { background: none !important; }
 
-.supports_custom_scrollbar .texty_legacy:not(.texty_single_line_input) .ql-editor { color: #e6e6e6; }
+.c-message__editor__input--legacy { background-color: #2b2c2e; }
+.supports_custom_scrollbar .texty_legacy:not(.texty_single_line_input) .ql-editor { color: #e6e6e6; background-color:#2b2c2e; }
 
 .monkey_scroll_bar { background: #424242; }
 
@@ -4241,3 +4242,5 @@ pre.c-mrkdwn__pre {
 }
 
 .c-message_list__unread_divider__separator { border-color: #DB6668; }
+
+.c-message__editor__emoji_circle_icon, .c-message__editor__emoji_happy_icon, .c-message__editor__emoji_smile_icon { color: #949494; }
