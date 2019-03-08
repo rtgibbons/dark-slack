@@ -399,17 +399,17 @@ button#main_emo_menu { margin-bottom: -2px; }
 
 #message_edit_form.offline #primary_file_button { border-color: #424242; color: #949494; }
 
-#msg_form.focus #msg_input, #msg_form.focus #primary_file_button:not(:hover):not(.active) { border-color: #363636; }
+#msg_form.focus #msg_input, #msg_form.focus #primary_file_button:not(:hover):not(.active), #convo_tab .p-message_input_field { border-color: #363636; }
 
-#msg_form #msg_input { background: padding-box #2d2d2d; border:none; color: #e6e6e6; }
+#msg_form #msg_input, #convo_tab .p-message_input_field  { background: padding-box #2d2d2d; border:none; color: #e6e6e6; }
 
-#msg_form #msg_input.focus ~ .msg_mentions_button:not(.hover) { color: #e6e6e6; }
+#msg_form #msg_input.focus ~ .msg_mentions_button:not(.hover), #convo_tab .p-message_input_field ~ .c-icon:not(.hover) { color: #e6e6e6; }
 
 #msg_form .msg_mentions_button { color: #949494; margin-bottom: -2px;}
 
 #msg_form .msg_mentions_button:hover { color: #56b68b; }
 
-#msg_input { background: #545454; border-color: #424242; color: #e6e6e6; }
+#msg_input, #convo_tab .p-message_input_field { background: #545454; border-color: #424242; color: #e6e6e6; }
 
 #msg_input.texty_legacy .ql-editor { background: #2d2d2d; }
 
@@ -423,11 +423,16 @@ button#main_emo_menu { margin-bottom: -2px; }
 
 #msg_input:focus, #msg_input.focus { border-color: #363636; }
 
-#msg_input:focus + #primary_file_button:not(:hover):not(.active), #msg_input.focus + #primary_file_button:not(:hover):not(.active) { border-color: #363636; }
+#msg_input:focus + #primary_file_button:not(:hover):not(.active), 
+#msg_input.focus + #primary_file_button:not(:hover):not(.active), 
+#convo_tab .p-message_input_field + .p-message_input_file_button:not(:hover):not(.active), 
+#convo_tab .p-message_input_field + .p-message_input_file_button:not(:hover):not(.active) { border-color: #363636; }
 
-#msg_input + #primary_file_button:not(:hover):not(.active) { border: none; }
+#msg_input + #primary_file_button:not(:hover):not(.active), 
+#convo_tab .p-message_input_field + .p-message_input_file_button:not(:hover):not(.active) { border: none; }
 
-#msg_input + #primary_file_button.focus-ring:not(:hover):not(.active) { border: none; }
+#msg_input + #primary_file_button.focus-ring:not(:hover):not(.active), 
+#convo_tab .p-message_input_field + .p-message_input_file_button.focus-ring:not(:hover):not(.active) { border: none; }
 
 #msg_input.offline:not(.pretend-to-be-online) { background-color: #363636 !important; color: #949494; }
 
@@ -435,9 +440,17 @@ button#main_emo_menu { margin-bottom: -2px; }
 
 #msg_input_message { background-color: #363636; color: #e6e6e6; }
 
-#primary_file_button { background: padding-box #2d2d2d; border-color: #424242; color: #949494; }
+#primary_file_button,
+#convo_tab + .p-message_input_file_button { background: padding-box #2d2d2d; border-color: #424242; color: #949494; }
 
-#primary_file_button.active, #primary_file_button.focus-ring, #primary_file_button:focus, #primary_file_button:hover { background: #2d2d2d; border: #2d2d2d; color: #56b68b; }
+#primary_file_button.active, 
+#primary_file_button.focus-ring, 
+#primary_file_button:focus, 
+#primary_file_button:hover,
+#convo_tab + .p-message_input_file_button.active,
+#convo_tab + .p-message_input_file_button.focus-ring,
+#convo_tab + .p-message_input_file_button:focus,
+#convo_tab + .p-message_input_file_button:hover { background: #2d2d2d; border: #2d2d2d; color: #56b68b; }
 
 #footer, #footer.footer_msg_input { background: #222; box-shadow: inset 1px 0 0 0 #222; }
 
