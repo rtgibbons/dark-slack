@@ -4262,3 +4262,5 @@ pre.c-mrkdwn__pre {
 .c-message_list__unread_divider__separator { border-color: #DB6668; }
 
 .c-message__editor__emoji_circle_icon, .c-message__editor__emoji_happy_icon, .c-message__editor__emoji_smile_icon { color: #949494; }
+
+.c-message_kit__file__meta { color: rgba(255, 255, 255, 0.7); }
